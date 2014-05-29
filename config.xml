@@ -17,4 +17,10 @@ David Gong
 <icon src="icon.png" />
 <gap:splash src="splash.png" />
 
+<supports-screens android:anyDensity="true" android:resizeable="true" 
+    android:smallScreens="true" 
+    android:normalScreens="true" 
+    android:largeScreens="true" 
+    android:xlargeScreens="true" />
+
 </widget>
