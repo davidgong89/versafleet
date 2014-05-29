@@ -7,11 +7,14 @@
 <name>PhoneGap Build Application</name>
 
 <description>
-A simple PhoneGap Build application.
+VersaFleet Dispatch Management System
 </description>
 
 <author href="https://example.com" email="you@example.com">
-Your Name
+David Gong
 </author>
+
+<icon src="icon.png" />
+<gap:splash src="splash.png" />
 
 </widget>
