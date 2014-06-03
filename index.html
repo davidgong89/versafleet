@@ -9,6 +9,7 @@
 
 <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 
+
 </head>
 <body>
 
@@ -51,8 +52,6 @@
 <!--PANEL (START)-->
 <div data-role="panel" id="myPanel"> 
     <h3>Menu</h3>
-    <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
-    
     <!--PANEL CONTENTS (START)-->
     <div data-role="controlgroup" data-type="horizontal|vertical">
       <a href="#login_page" class="ui-btn">Log Out</a>
@@ -70,9 +69,10 @@
   <tr>
     <td>
     <!--1st job-->
+    <!--PAGE 2-1 / Details-->
     <div class="ui-grid-solo">
       <div class="ui-block-a">
-        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">From Bedok -> Changi Warehouse</a>
+        <a href="#page2-1" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">Bedok to Changi Warehouse</a>
       </div>
     </div>
     </td>
@@ -81,9 +81,10 @@
   <tr>
     <td>
 	<!--2nd job-->
+    <!--PAGE 2-2 / Details-->
     <div class="ui-grid-solo">
       <div class="ui-block-a">
-        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">From Bedok -> Changi Warehouse</a>
+        <a href="#page2-2" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">Bukit Batok to Jurong Warehouse</a>
       </div>
     </div>
     </td>
@@ -94,7 +95,7 @@
 	<!--3rd job-->
     <div class="ui-grid-solo">
       <div class="ui-block-a">
-        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">From Bedok -> Changi Warehouse</a>
+        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">Admiralty to Penang Warehouse</a>
       </div>
     </div>
     </td>
@@ -105,7 +106,7 @@
 	<!--4th job-->
     <div class="ui-grid-solo">
       <div class="ui-block-a">
-        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">From Bedok -> Changi Warehouse</a>
+        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">Lavendar to Simei Warehouse</a>
       </div>
     </div>
     </td>
@@ -116,7 +117,7 @@
 	<!--5th job-->
     <div class="ui-grid-solo">
       <div class="ui-block-a">
-        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">From Bedok -> Changi Warehouse</a>
+        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">Joo Koon to Dover Warehouse</a>
       </div>
     </div>
     </td>
@@ -132,10 +133,10 @@
 
 <!--################################-->
 <!--################################-->
-<!--PAGE 2 / Details-->
-<div data-role="page" id="pagetwo">
+<!--PAGE 2-1 / Details-->
+<div data-role="page" id="page2-1">
 
-<!--HOME 2 [HEADER 2]-->
+<!--HOME 2-1 [HEADER 2]-->
   <div data-role="header">
     <a href="#myPanel1" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
     <h1>Job Orders</h1>
@@ -145,7 +146,6 @@
 <!--PANEL (START)-->
 <div data-role="panel" id="myPanel1"> 
     <h3>Menu</h3>
-    <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
     
     <!--PANEL CONTENTS (START)-->
     <div data-role="controlgroup" data-type="horizontal|vertical">
@@ -158,21 +158,31 @@
   </div> 
 <!--PANEL (END)-->
 
-<!--DETAIL CONTENTS-->
+<!--PAGE 2-1 DETAIL CONTENTS-->
   <div data-role="main" class="ui-content">
   
-  <table border="0" align="center">
+  <table border="0" width="100%" align="center">
   
-  <tr>
-    <td>DETAILS</td>
+  <tr align="center">
+    <td>
+    <b>Bedok to Changi Warehouse</b>
+    </td>
   </tr>
   
-   <tr>
-    <td>MAP</td>
+   <tr align="center">
+    <td>
+    
+    <!--map code (below)-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+    <!--map code (above)-->
+    
+    </td>
   </tr>
   
   <tr>
-    <td><a href="#job_orders">Go to Page One</a></td>
+    <td>
+    	<a href="#job_orders" class="ui-btn" data-transition="slide" data-direction="reverse">Return</a>
+    </td>
   </tr>
 
 </table>
@@ -183,6 +193,72 @@
     <h1>Footer Text</h1>
   </div>-->
 </div> 
+
+
+<!--################################-->
+<!--################################-->
+<!--PAGE 2-2 / Details-->
+<div data-role="page" id="page2-2">
+
+<!--HOME 2-2 [HEADER 2]-->
+  <div data-role="header">
+    <a href="#myPanel2" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <h1>Job Orders</h1>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+  </div>
+
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel2"> 
+    <h3>Menu</h3>
+    
+    <!--PANEL CONTENTS (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn" data-transition="fade">Log Out</a>
+      <a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>
+    </div>
+    <!--PANEL CONTENTS (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--PAGE 2-2 DETAIL CONTENTS-->
+  <div data-role="main" class="ui-content">
+  
+  <table border="0" width="100%" align="center">
+  
+  <tr align="center">
+    <td>
+    <b>Bukit Batok to Jurong Warehouse</b>
+    </td>
+  </tr>
+  
+   <tr align="center">
+    <td>
+    
+    <!--map code (below)-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+    <!--map code (above)-->
+    
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    	<a href="#job_orders" class="ui-btn" data-transition="slide" data-direction="reverse">Return</a>
+    </td>
+  </tr>
+
+</table>
+  </div>
+
+<!--
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
+</div> 
+
+
 
 </body>
 </html>
