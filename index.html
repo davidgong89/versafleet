@@ -1,49 +1,196 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>VDMS</title>
-<!--for viewing purposes (all devices)-->
-<meta name="viewport" content="width=device-width, user-scalable=yes" />
-<!--for viewing purposes (all devices)-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio: 1.0)" href="stylesheet.css"/>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+
 </head>
-
-
 <body>
-<div id="body">
-  <div align="center"><img src="versafleet_logo.png" alt="VDMS" width="181" height="54"></div>
-  <h3 align="center" id="title">Dispatch Management System</h3>
-  <p align="center">&nbsp; </p>
-  
-  <form id="form1" name="form1" method="post" action="" align="center">
-  
-    <!--login inputs-->
-  <p class="input">
-    Username: 
-    <input name="username" type="text" dir="ltr" />
-</p>
-  <p class="input">Password:
-    <input name="password" type="password" dir="ltr" />
-  </p>
 
-  
-    <div id="login_button">
-    <a href="driver.html"><img src="login_button.png" /></a>
+<!--################################-->
+<!--################################-->
+<!--LOG IN PAGE-->
+<div data-role="page" id="login_page">
+<!--
+  <div data-role="header">  
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Show Popup Form</a>
+
+    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">-->
+    
+      <form method="post" action="demoform.asp">
+        <div>
+          <h3>Login information</h3>
+          <label for="usrnm" class="ui-hidden-accessible">Username:</label>
+          <input type="text" name="user" id="usrnm" placeholder="Username">
+          <label for="pswd" class="ui-hidden-accessible">Password:</label>
+          <input type="password" name="passw" id="pswd" placeholder="Password">
+          <label for="log">Keep me logged in</label>
+          <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+          <input type="submit" data-inline="true" value="Log in" onclick="window.location='#pageone'">
+        </div>
+      </form>
     </div>
-  <!--
-      <input type="submit" name="login_button" id="login_button" value="LOGIN" href="driver.html" />-->
+  </div>
+</div> 
 
-  </form>
+<!--################################-->
+<!--################################-->
+<!--PAGE 1 / JOB ORDERS-->
+<div data-role="page" id="pageone">
 
-  <p class="input">&nbsp;</p>
+<!--HOME 1 [HEADER 1]-->
+  <div data-role="header">
+    <a href="#myPanel" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Menu</a>
+    <h1>Job Orders</h1>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+  </div>
   
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel"> 
+    <h3>Menu</h3>
+    <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
+    
+    <!--PANEL (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn">Log Out</a>
+      <a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>
+    </div>
+    <!--PANEL (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--JOB ORDERS CONTENTS-->
+  <div data-role="main" class="ui-content">
+	<table width="100%" border="0">
+  <tr>
+    <td>
+    <!--1st job-->
+    <div class="ui-grid-solo">
+      <div class="ui-block-a">
+        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">From Bedok -> Changi Warehouse</a>
+      </div>
+    </div>
+    </td>
+  </tr>
   
+  <tr>
+    <td>
+	<!--2nd job-->
+    <div class="ui-grid-solo">
+      <div class="ui-block-a">
+        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">From Bedok -> Changi Warehouse</a>
+      </div>
+    </div>
+    </td>
+  </tr>
   
+  <tr>
+    <td>
+	<!--3rd job-->
+    <div class="ui-grid-solo">
+      <div class="ui-block-a">
+        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">From Bedok -> Changi Warehouse</a>
+      </div>
+    </div>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+	<!--4th job-->
+    <div class="ui-grid-solo">
+      <div class="ui-block-a">
+        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">From Bedok -> Changi Warehouse</a>
+      </div>
+    </div>
+    </td>
+  </tr>
+  
+  <tr>
+     <td>
+	<!--5th job-->
+    <div class="ui-grid-solo">
+      <div class="ui-block-a">
+        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">From Bedok -> Changi Warehouse</a>
+      </div>
+    </div>
+    </td>
+  </tr>
+</table>
+  </div>
+
+<!--
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
 </div>
+
+
+<!--################################-->
+<!--################################-->
+<!--PAGE 2 / Details-->
+<div data-role="page" id="pagetwo">
+
+<!--HOME 2 [HEADER 2]-->
+  <div data-role="header">
+    <a href="#myPanel" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Menu</a>
+    <h1>Job Orders</h1>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+  </div>
+
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel"> 
+    <h3>Menu</h3>
+    <p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>
+    
+        <!--PANEL (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn" data-transition="fade">Log Out</a>
+      <a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>
+    </div>
+    <!--PANEL (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--DETAIL CONTENTS-->
+  <div data-role="main" class="ui-content">
+  
+  <table border="0" align="center">
+  
+  <tr>
+    <td>DETAILS</td>
+  </tr>
+  
+   <tr>
+    <td>MAP</td>
+  </tr>
+  
+  <tr>
+    <td><a href="#pageone">Go to Page One</a></td>
+  </tr>
+
+</table>
+  </div>
+
+<!--
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
+</div> 
+
 </body>
-
-
-
 </html>

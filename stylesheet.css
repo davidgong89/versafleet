@@ -11,24 +11,12 @@
 }
 
 .input{
-	margin-left:10px;
     margin-right:auto;
 }
-	
-#welcome-message{
-	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
-	font-size:12px;
-}
-
 
 #logout_button{
 	padding-left:170px;
 	margin-top:-10px;
-}
-
-#login_button{
-	padding-left:60px;
-	margin-top:25px;
 }
 
 #joborders_button{
@@ -44,12 +32,29 @@
 	margin-top:5px;
 }
 
-#acknowledge_button{
-	margin-top:40px;
-	margin-left:65px;
+#buttons{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #return_button{
 	margin-top:40px;
 	margin-left:90px;	
 }
+
+.body_style{
+	background-color:#B7E8E0;
+}
+
+a:link {text-decoration:none;
+color:#999;}
+
+a:visited {text-decoration:none;
+color:#999;}
+
+a:hover {text-decoration:none;
+color:#999;}
+
+a:active {text-decoration:none;
+color:#999;}

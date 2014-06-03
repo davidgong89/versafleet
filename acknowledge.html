@@ -11,32 +11,31 @@
 <link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio: 1.0)" href="stylesheet.css"/>
 </head>
 
-<body>
-<!--welcome message-->
-<p id="welcome-message" align="center">
-Hello user,<br/>
-you have currently logged in.
-</p>
+<body class="body_style">
 
-<!--log out button-->
-<div id="logout_button">
-<a href="index.html"><img src="logout_button.png" /></a>
-</div>
-
-<div id="joborders_button">
-<a href="driver.html"><img src="job_orders.png" /></a>
-</div>
-
-<!--job orders table-->
-<div id="table_align"></div>
-<br/>
-<p align="center">
-Thank you!=)
-</p>
-
-<div id="return_button">
-<a href="driver.html"><img src="return_button.png" /></a>
-</div>
+<table width="200" border="0" align="center">
+  <tr>
+        <!--welcome message-->
+        <td align="center">Hello user,<br/>
+    you have currently logged in. 
+        </td>
+  </tr>
+  <tr>
+    	<td align="center" id="buttons">		
+    <button onClick="window.location='driver.html'"><b>JOB ORDERS</b></button>
+    	<button onClick="window.location='index.html'"><b>LOG OUT</b></button>
+        </td>
+  </tr>
+  <tr>
+    <td height="24" align="center">
+      <p>Thank you!=) </p></td>
+  </tr>
+  <tr>
+    <td id="buttons" align="center"><a href="index.html">    	
+    	<button onClick="window.location='driver.html'"><b>RETURN</b></button></a>
+    </td>
+  </tr>
+</table>
 
 
 </body>
