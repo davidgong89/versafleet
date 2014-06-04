@@ -44,9 +44,12 @@
 <!--HOME 1 [HEADER 1]-->
   <div data-role="header">
   	<!--menu-->
+    
     <a href="#myPanel" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    
     <h1>Job Orders</h1>
-    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
   </div>
   
 <!--PANEL (START)-->
@@ -65,70 +68,76 @@
 
 <!--JOB ORDERS CONTENTS-->
   <div data-role="main" class="ui-content">
-	<table width="100%" border="0">
-  <tr>
-    <td>
-    <!--1st job-->
-    <!--PAGE 2-1 / Details-->
-    <div class="ui-grid-solo">
-      <div class="ui-block-a">
-        <a href="#page2-1" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">Bedok to Changi Warehouse</a>
-      </div>
-    </div>
-    </td>
-  </tr>
   
-  <tr>
-    <td>
-	<!--2nd job-->
-    <!--PAGE 2-2 / Details-->
-    <div class="ui-grid-solo">
-      <div class="ui-block-a">
-        <a href="#page2-2" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">Bukit Batok to Jurong Warehouse</a>
-      </div>
-    </div>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-	<!--3rd job-->
-    <div class="ui-grid-solo">
-      <div class="ui-block-a">
-        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">Admiralty to Penang Warehouse</a>
-      </div>
-    </div>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-	<!--4th job-->
-    <div class="ui-grid-solo">
-      <div class="ui-block-a">
-        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">Lavendar to Simei Warehouse</a>
-      </div>
-    </div>
-    </td>
-  </tr>
-  
-  <tr>
-     <td>
-	<!--5th job-->
-    <div class="ui-grid-solo">
-      <div class="ui-block-a">
-        <a href="#pagetwo" data-transition="slide" class="ui-btn ui-corner-all ui-shadow">Joo Koon to Dover Warehouse</a>
-      </div>
-    </div>
-    </td>
-  </tr>
-</table>
+    <!--list of job orders added [with search function included with the form tags]-->
+    <form class="ui-filterable">
+      <input id="myFilter" data-type="search">
+    </form>
+    
+    <ul data-role="listview" data-filter="true" data-input="#myFilter">
+      <li data-role="list-divider">West</li>
+      <li>
+      <!--1st job-->
+      <!--PAGE 2-1 / Details-->
+      <a href="#page2-1" data-transition="slide">Bedok to Changi Warehouse</a>
+      </li>
+      
+      <li>
+      <!--2nd job-->
+      <!--PAGE 2-2 / Details-->
+      <a href="#page2-2" data-transition="slide">Bukit Batok to Jurong Warehouse</a>
+      </li>
+      
+      <li data-role="list-divider">North</li>
+      <li>
+      <!--3rd job-->
+      <!--PAGE 2-3 / Details-->
+      <a href="#pagetwo" data-transition="slide">Admiralty to Penang Warehouse</a>
+      </li>
+    
+      <li>
+      <!--4th job-->
+      <!--PAGE 2-4 / Details-->
+      <a href="#pagetwo" data-transition="slide">Lavendar to Simei Warehouse</a>
+      </li>
+    
+      <li data-role="list-divider">East</li>
+      <li>
+      <!--5th job-->
+      <!--PAGE 2-5 / Details-->
+      <a href="#pagetwo" data-transition="slide">Joo Koon to Dover Warehouse</a>
+      </li>
+      
+      <li>
+      <!--6th job-->
+      <!--PAGE 2-6 / Details-->
+      <a href="#pagetwo" data-transition="slide">Joo Koon to Dover Warehouse</a>
+      </li>
+      
+      <li data-role="list-divider">South</li>
+      <li>
+      <!--7th job-->
+      <!--PAGE 2-7 / Details-->
+      <a href="#pagetwo" data-transition="slide">Joo Koon to Dover Warehouse</a>
+      </li>
+      
+      <li>
+      <!--8th job-->
+      <!--PAGE 2-8 / Details-->
+      <a href="#pagetwo" data-transition="slide">Joo Koon to Dover Warehouse</a>
+      </li>
+
+      
+    </ul>
+    <!--unordered list added above-->  
+
   </div>
 
 <!--<div data-role="footer">
     <h1>Footer Text</h1>
   </div>-->
 </div>
+
 
 
 <!--################################-->
@@ -140,7 +149,8 @@
   <div data-role="header">
     <a href="#myPanel1" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
     <h1>Job Orders</h1>
-    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
   </div>
 
 <!--PANEL (START)-->
@@ -195,6 +205,7 @@
 </div> 
 
 
+
 <!--################################-->
 <!--################################-->
 <!--PAGE 2-2 / Details-->
@@ -204,7 +215,8 @@
   <div data-role="header">
     <a href="#myPanel2" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
     <h1>Job Orders</h1>
-    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
   </div>
 
 <!--PANEL (START)-->
