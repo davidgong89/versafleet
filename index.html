@@ -9,7 +9,6 @@
 
 <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 
-
 </head>
 <body>
 
@@ -21,7 +20,8 @@
 	<div data-role="main" class="ui-content">
       <form method="post" action="demoform.asp">
         <div>
-          <h3>Login information</h3>
+          <div align="center"><img src="versafleet_logo.png" alt="versafleet" width="250px"/></div>
+          <h3 align="center">Login information</h3>
           <label for="usrnm" class="ui-hidden-accessible">Username:</label>
           <input type="text" name="user" id="usrnm" placeholder="Username">
           <label for="pswd" class="ui-hidden-accessible">Password:</label>
@@ -45,7 +45,7 @@
   <div data-role="header">
   	<!--menu-->
     
-    <a href="#myPanel" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext ui-btn-icon-notext">Menu</a>
     
     <h1>Job Orders</h1>
     <!--
@@ -160,7 +160,7 @@
 
 <!--HOME 2-1 [HEADER 2]-->
   <div data-role="header">
-    <a href="#myPanel_1" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel_1" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext ui-btn-icon-notext">Menu</a>
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
@@ -190,21 +190,22 @@
     <td>
   
     <!--1st Job Details (below)-->
-    <table border="1" bordercolor="#CCCCCC" align="center">
+    <table border="0" bordercolor="#CCCCCC" align="center">
     	<tr>
         	<td><b>Job ID: </b></td>
             <td>20140505-BMW-00</td>
         </tr>
         <tr>
-        	<td><b>From: </b></td>
-            <td>BLK 888 Jurong West Ave 6 Singapore 650115</td>
+        	<td><b>From: <br/><br/><br/><br/></b></td>
+            <td>BLK 888 Jurong West Ave 6 <br/>Singapore 650115 <br/>
+            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.710376913569!2d103.7254275!3d1.3502988999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fded1853553%3A0xf419ce15ac316009!2s6+Jurong+West+Avenue+1!5e0!3m2!1sen!2s!4v1401957199385" target="map1-1" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         <tr>
-        	<td><b>To: </b></td>
-            <td>BLK 61A Changi Warehouse Singapore 784115</td>
+        	<td><b>To: <br/><br/><br/><br/></b></td>
+            <td>BLK 61A Changi Warehouse <br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63819.32317968105!2d103.99887695000001!3d1.3519299999999903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3c396b91ad1f%3A0x921d79f3ad5d2e7f!2sChangi!5e0!3m2!1sen!2s!4v1401957283326" target="map1-1" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         </tr>
         <tr bgcolor="#daedf4">
         	<td><b>Receiving: </b></td>
-            <td>Mr Asri</td>
+            <td>Mr Asri [M: +65 9337 6592]</td>
         </tr>
         <tr bgcolor="#daedf4">
         	<td>&nbsp;</td>
@@ -225,10 +226,12 @@
   
    <tr align="center">
     <td>
+    <div >
+    <!--map code (below)--> 
     
-    <!--map code (below)-->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.710376913569!2d103.7254275!3d1.3502988999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fded1853553%3A0xf419ce15ac316009!2s6+Jurong+West+Avenue+1!5e0!3m2!1sen!2s!4v1401957199385" width="100%" height="90%" frameborder="0" style="border:0" name="map1-1"></iframe>
     <!--map code (above)-->
+    </div>
     
     </td>
   </tr>
@@ -257,7 +260,7 @@
 
 <!--HOME 2-2 [HEADER 2]-->
   <div data-role="header">
-    <a href="#myPanel_2" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel_2" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
@@ -287,21 +290,24 @@
     <td>
     
     <!--1st Job Details (below)-->
-    <table border="1" bordercolor="#CCCCCC" align="center">
+    <table border="0" bordercolor="#CCCCCC" align="center">
     	<tr>
         	<td><b>Job ID: </b></td>
-            <td>20140505-BMW-00</td>
+            <td>20140505-BMW-02</td>
         </tr>
+       
         <tr>
-        	<td><b>From: </b></td>
-            <td>BLK 888 Bukit Panjang Ave 6 Singapore 650115</td>
+        	<td><b>From: <br/><br/><br/><br/></b></td>
+            <td>BLK 888 Bukit Panjang Ave 6<br/>Singapore 650115 <br/>
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.660784063224!2d103.76319499999998!3d1.3801900000000038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11bcce58a3d3%3A0x6c0ffa4d63b9bbe3!2s6+Bukit+Panjang+Rd!5e0!3m2!1sen!2s!4v1401959363572" target="map1-2" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         <tr>
-        	<td><b>To: </b></td>
-            <td>BLK 54B Jurong Warehouse Singapore 784115</td>
+        	<td><b>To: <br/><br/><br/><br/></b></td>
+            <td>BLK 54B Jurong Warehouse<br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.771996165275!2d103.67897913491821!3d1.3122110546700552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da059ef14eb635%3A0x82eaaa13d71c6a28!2sCentral+Engineering+Pte+Ltd+Jurong+Warehouse!5e0!3m2!1sen!2s!4v1401959487201" target="map1-2" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         </tr>
+       
         <tr bgcolor="#daedf4">
         	<td><b>Receiving: </b></td>
-            <td>Mr Asri</td>
+            <td>Mr Asri [M: +65 9337 6592]</td>
         </tr>
         <tr bgcolor="#daedf4">
         	<td>&nbsp;</td>
@@ -326,7 +332,7 @@
     <td>
     
     <!--map code (below)-->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.660784063224!2d103.76319499999998!3d1.3801900000000038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11bcce58a3d3%3A0x6c0ffa4d63b9bbe3!2s6+Bukit+Panjang+Rd!5e0!3m2!1sen!2s!4v1401959363572" width="100%" height="90%" frameborder="0" style="border:0" name="map1-2"></iframe>
     <!--map code (above)-->
     
     </td>
@@ -357,7 +363,7 @@
 
 <!--HOME 2-3 [HEADER 3]-->
   <div data-role="header">
-    <a href="#myPanel_3" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel_3" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
@@ -387,21 +393,26 @@
     <td>
     
     <!--1st Job Details (below)-->
-    <table border="1" bordercolor="#CCCCCC" align="center">
+    <table border="0" bordercolor="#CCCCCC" align="center">
     	<tr>
         	<td><b>Job ID: </b></td>
             <td>20140505-BMW-03</td>
         </tr>
+        
+        
         <tr>
-        	<td><b>From: </b></td>
-            <td>BLK 44 Bishan Ave 6 Singapore 650115</td>
+        	<td><b>From: <br/><br/><br/><br/></b></td>
+            <td>BLK 44 Bishan Ave 6 <br/>Singapore 650115 <br/>
+            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7108028654225!2d103.84904790000002!3d1.3500393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1716bd874539%3A0x8bd8e47976c5d263!2s6+Bishan+Pl!5e0!3m2!1sen!2s!4v1401960089361" target="map1-3" class="ui-btn ui-icon-info  ui-corner-all ui-btn-icon-notext"></a></td>
         <tr>
-        	<td><b>To: </b></td>
-            <td>BLK 23A Penang Warehouse MY 784115</td>
+        	<td><b>To: <br/><br/><br/><br/></b></td>
+            <td>BLK 23A Penang Warehouse <br/>MY 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127110.21733287512!2d100.30257729778899!3d5.387331017084949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPenang+Warehouse!5e0!3m2!1sen!2s!4v1401960142891" target="map1-3" class="ui-btn ui-icon-info ui-corner-all  ui-btn-icon-notext"></a></td>
         </tr>
+        
+        
         <tr bgcolor="#daedf4">
         	<td><b>Receiving: </b></td>
-            <td>Mr Ali</td>
+            <td>Mr Ali [M: +65 9567 6592]</td>
         </tr>
         <tr bgcolor="#daedf4">
         	<td>&nbsp;</td>
@@ -426,7 +437,7 @@
     <td>
     
     <!--map code (below)-->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7108028654225!2d103.84904790000002!3d1.3500393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1716bd874539%3A0x8bd8e47976c5d263!2s6+Bishan+Pl!5e0!3m2!1sen!2s!4v1401960089361" width="100%" height="90%" frameborder="0" style="border:0" name="map1-3"></iframe>
     <!--map code (above)-->
     
     </td>
@@ -455,7 +466,7 @@
 
 <!--HOME 2-4 [HEADER 4]-->
   <div data-role="header">
-    <a href="#myPanel_4" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel_4" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
@@ -485,21 +496,25 @@
     <td>
     
     <!--1st Job Details (below)-->
-    <table border="1" bordercolor="#CCCCCC" align="center">
+    <table border="0" bordercolor="#CCCCCC" align="center">
     	<tr>
         	<td><b>Job ID: </b></td>
             <td>20140505-BMW-04</td>
         </tr>
+        
+        
         <tr>
-        	<td><b>From: </b></td>
-            <td>BLK 24 Kranji Ave 6 Singapore 676215</td>
+        	<td><b>From: <br/><br/><br/><br/></b></td>
+            <td>BLK 24 Kranji Ave 6 <br/>Singapore 676215 <br/>
+            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.5704936582124!2d103.75650800000001!3d1.4330110000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da125c67726c01%3A0xc82588941e010e5!2s6+Kranji+Loop!5e0!3m2!1sen!2s!4v1401960631477" target="map1-4" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         <tr>
-        	<td><b>To: </b></td>
-            <td>BLK 23A Simei Warehouse Singapore 784115</td>
+        	<td><b>To: <br/><br/><br/><br/></b></td>
+            <td>BLK 23A Simei Warehouse <br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7977.448589259525!2d103.95419020370483!3d1.3417906436682112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSi+mei!5e0!3m2!1sen!2s!4v1401960710375" target="map1-4" class="ui-btn ui-icon-info ui-corner-all  ui-btn-icon-notext"></a></td>
         </tr>
+        
         <tr bgcolor="#daedf4">
         	<td><b>Receiving: </b></td>
-            <td>Mr Ali</td>
+            <td>Mr Ali [M: +65 9567 8485]</td>
         </tr>
         <tr bgcolor="#daedf4">
         	<td>&nbsp;</td>
@@ -524,7 +539,7 @@
     <td>
     
     <!--map code (below)-->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.5704936582124!2d103.75650800000001!3d1.4330110000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da125c67726c01%3A0xc82588941e010e5!2s6+Kranji+Loop!5e0!3m2!1sen!2s!4v1401960631477" width="100%" height="90%" frameborder="0" style="border:0" name="map1-4"></iframe>
     <!--map code (above)-->
     
     </td>
@@ -553,7 +568,7 @@
 
 <!--HOME 2-5 [HEADER 5]-->
   <div data-role="header">
-    <a href="#myPanel_5" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel_5" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
@@ -583,21 +598,24 @@
     <td>
     
     <!--1st Job Details (below)-->
-    <table border="1" bordercolor="#CCCCCC" align="center">
+    <table border="0" bordercolor="#CCCCCC" align="center">
     	<tr>
         	<td><b>Job ID: </b></td>
             <td>20140505-BMW-05</td>
         </tr>
+        
         <tr>
-        	<td><b>From: </b></td>
-            <td>BLK 33 Pasir Ris Ave 6 Singapore 676215</td>
+        	<td><b>From: <br/><br/><br/><br/></b></td>
+            <td>BLK 33 Pasir Ris Ave 6 <br/>Singapore 676215 <br/>
+            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.6601472814273!2d103.9451903!3d1.3805695999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3db8e8d6f121%3A0xa0cd6a2a70b6491b!2s6+Pasir+Ris+Ave!5e0!3m2!1sen!2s!4v1401960977549" target="map1-5" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         <tr>
-        	<td><b>To: </b></td>
-            <td>BLK 3A Dover Warehouse Singapore 784115</td>
+        	<td><b>To: <br/><br/><br/><br/></b></td>
+            <td>BLK 3A Dover Warehouse <br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40064.51527336135!2d1.3009803499999952!3d51.12631399999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dea4d1553332ff%3A0x32785c875ad74851!2sDover!5e0!3m2!1sen!2s!4v1401961039244" target="map1-5" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         </tr>
+        
         <tr bgcolor="#daedf4">
         	<td><b>Receiving: </b></td>
-            <td>Mr Ali</td>
+            <td>Mr Ali [M: +65 9192 8485]</td>
         </tr>
         <tr bgcolor="#daedf4">
         	<td>&nbsp;</td>
@@ -622,7 +640,7 @@
     <td>
     
     <!--map code (below)-->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.6601472814273!2d103.9451903!3d1.3805695999999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3db8e8d6f121%3A0xa0cd6a2a70b6491b!2s6+Pasir+Ris+Ave!5e0!3m2!1sen!2s!4v1401960977549" width="100%" height="90%" frameborder="0" style="border:0" name="map1-5"></iframe>
     <!--map code (above)-->
     
     </td>
@@ -651,7 +669,7 @@
 
 <!--HOME 2-6 [HEADER 6]-->
   <div data-role="header">
-    <a href="#myPanel_6" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel_6" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
@@ -681,21 +699,26 @@
     <td>
     
     <!--1st Job Details (below)-->
-    <table border="1" bordercolor="#CCCCCC" align="center">
+    <table border="0" bordercolor="#CCCCCC" align="center">
     	<tr>
         	<td><b>Job ID: </b></td>
             <td>20140505-BMW-06</td>
         </tr>
         <tr>
-        	<td><b>From: </b></td>
-            <td>BLK 12B Bedok Ave 6 Singapore 676215</td>
+        
+        
         <tr>
-        	<td><b>To: </b></td>
-            <td>BLK 3D Paya Lebar Warehouse Singapore 784115</td>
+        	<td><b>From: <br/><br/><br/><br/></b></td>
+            <td>BLK 12B Bedok Ave 6 <br/>Singapore 676215 <br/>
+            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7576013449598!2d103.953421!3d1.321207!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da22d160257fb1%3A0xf1b2b098983d399e!2s6+Bedok+Ave!5e0!3m2!1sen!2s!4v1401980853715" target="map1-6" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
+        <tr>
+        	<td><b>To: <br/><br/><br/><br/></b></td>
+            <td>BLK 3D Paya Lebar Warehouse  <br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31909.54835821683!2d103.91191340449214!3d1.3605177435096936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da17d5be111bc5%3A0x500f7acaedaa750!2sPaya+Lebar!5e0!3m2!1sen!2s!4v1401980903761" target="map1-6" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         </tr>
+
         <tr bgcolor="#daedf4">
         	<td><b>Receiving: </b></td>
-            <td>Mr Ali</td>
+            <td>Mr Ali [M: +65 9192 8485]</td>
         </tr>
         <tr bgcolor="#daedf4">
         	<td>&nbsp;</td>
@@ -720,7 +743,7 @@
     <td>
     
     <!--map code (below)-->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7576013449598!2d103.953421!3d1.321207!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da22d160257fb1%3A0xf1b2b098983d399e!2s6+Bedok+Ave!5e0!3m2!1sen!2s!4v1401980853715" width="100%" height="90%" frameborder="0" style="border:0" name="map1-6"></iframe>
     <!--map code (above)-->
     
     </td>
@@ -750,7 +773,7 @@
 
 <!--HOME 2-7 [HEADER 7]-->
   <div data-role="header">
-    <a href="#myPanel_7" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel_7" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
@@ -780,21 +803,25 @@
     <td>
     
     <!--1st Job Details (below)-->
-    <table border="1" bordercolor="#CCCCCC" align="center">
+    <table border="0" bordercolor="#CCCCCC" align="center">
     	<tr>
         	<td><b>Job ID: </b></td>
             <td>20140505-BMW-07</td>
         </tr>
+        
+        
+         <tr>
+        	<td><b>From: <br/><br/><br/><br/></b></td>
+            <td>BLK 8C Marina Bay 4 <br/>Singapore 342215 <br/>
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8047081416025!2d103.86386099999997!3d1.291534999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19aa3ab11fe9%3A0x896c5baf71d4c805!2sMarina+Bay+Street+Circuit!5e0!3m2!1sen!2s!4v1401981699345" target="map1-7" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         <tr>
-        	<td><b>From: </b></td>
-            <td>BLK 8C Marina Bay 4 Singapore 342215</td>
-        <tr>
-        	<td><b>To: </b></td>
-            <td>BLK 41 Dover Warehouse Singapore 784115</td>
+        	<td><b>To: <br/><br/><br/><br/></b></td>
+            <td>BLK 41 Dover Warehouse <br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7734261916466!2d103.778658!3d1.3113139999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a610eed8723%3A0x183553335a553db6!2sDover!5e0!3m2!1sen!2s!4v1401981770488" target="map1-7" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         </tr>
+        
         <tr bgcolor="#daedf4">
         	<td><b>Receiving: </b></td>
-            <td>Mr Ali</td>
+            <td>Mr Ali  [M: +65 9192 8485]</td>
         </tr>
         <tr bgcolor="#daedf4">
         	<td>&nbsp;</td>
@@ -819,7 +846,7 @@
     <td>
     
     <!--map code (below)-->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8047081416025!2d103.86386099999997!3d1.291534999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19aa3ab11fe9%3A0x896c5baf71d4c805!2sMarina+Bay+Street+Circuit!5e0!3m2!1sen!2s!4v1401981699345" width="100%" height="90%" frameborder="0" style="border:0" name="map1-7"></iframe>
     <!--map code (above)-->
     
     </td>
@@ -849,7 +876,7 @@
 
 <!--HOME 2-8 [HEADER 8]-->
   <div data-role="header">
-    <a href="#myPanel_8" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel_8" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
@@ -879,21 +906,25 @@
     <td>
     
     <!--1st Job Details (below)-->
-    <table border="1" bordercolor="#CCCCCC" align="center">
+    <table border="0" bordercolor="#CCCCCC" align="center">
     	<tr>
         	<td><b>Job ID: </b></td>
             <td>20140505-BMW-08</td>
         </tr>
+        
+        
+         <tr>
+        	<td><b>From: <br/><br/><br/><br/></b></td>
+            <td>BLK 3A Harbour Front <br/>Singapore 342215 <br/>
+            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2887.44957193711!2d-79.38272099999999!3d43.638814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b352a8a12d2c9%3A0x747fe307c5654095!2sHarbourfront+Centre!5e0!3m2!1sen!2s!4v1401982090853" target="map1-8" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         <tr>
-        	<td><b>From: </b></td>
-            <td>BLK 3A Harbour Front Singapore 342215</td>
-        <tr>
-        	<td><b>To: </b></td>
-            <td>BLK 9C Marina Bay Warehouse Singapore 784115</td>
+        	<td><b>To: <br/><br/><br/><br/></b></td>
+            <td>BLK 9C Marina Bay Warehouse <br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2951.076409319327!2d-71.02963249999999!3d42.298235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMarina+Bay!5e0!3m2!1sen!2s!4v1401982218075" target="map1-8" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
         </tr>
+        
         <tr bgcolor="#daedf4">
         	<td><b>Receiving: </b></td>
-            <td>Mr Ali</td>
+            <td>Mr Ali [M: +65 9192 8485]</td>
         </tr>
         <tr bgcolor="#daedf4">
         	<td>&nbsp;</td>
@@ -918,7 +949,7 @@
     <td>
     
     <!--map code (below)-->
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2887.44957193711!2d-79.38272099999999!3d43.638814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b352a8a12d2c9%3A0x747fe307c5654095!2sHarbourfront+Centre!5e0!3m2!1sen!2s!4v1401982090853" width="100%" height="90%" frameborder="0" style="border:0" name="map1-8"></iframe>
     <!--map code (above)-->
     
     </td>
@@ -950,7 +981,7 @@
   <div data-role="header">
   	<!--menu-->
     
-    <a href="#myPanel0" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel0" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
     
     <h1>Job Orders</h1>
     <!--
@@ -1064,7 +1095,7 @@
   <div data-role="header">
   	<!--menu-->
     
-    <a href="#myPanel1" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel1" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
     
     <h1>Job Orders</h1>
     <!--
