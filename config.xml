@@ -5,10 +5,10 @@
     id              = "com.lumberg.greeeaaat"
     version         = "1.0.0">
 	
-<name>VDMS</name>
+<name>VersaFleet</name>
 
 <description>
-VersaFleet Dispatch Management System
+VersaFleet
 </description>
 
 <author href="https://example.com" email="you@example.com">
