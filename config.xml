@@ -2,7 +2,7 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
     xmlns:gap       = "http://phonegap.com/ns/1.0"
     xmlns:android   = "http://schemas.android.com/apk/res/android"
-    id              = "com.lumberg.greeeaaat"
+    id              = "com.sypherlabs.versafleet"
     version         = "1.0.0">
 	
 <name>VersaFleet</name>
@@ -11,12 +11,12 @@
 VersaFleet
 </description>
 
-<author href="https://example.com" email="you@example.com">
+<author href="https://versafleet.sg" email="davidgong@sypherlabs.com">
 David Gong
 </author>
 
-<icon src="icon.png" />
-<gap:splash src="splash.png" />
+<icon src="icon_new.png" />
+<gap:splash src="splash_new.png" />
 
 <supports-screens android:anyDensity="true" android:resizeable="true" 
     android:smallScreens="true" 
