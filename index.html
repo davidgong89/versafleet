@@ -38,7 +38,7 @@
 
 <!--################################-->
 <!--################################-->
-<!--PAGE 1 / JOB ORDERS-->
+<!--PAGE 1 SATURDAY [MIDDLE]/ JOB ORDERS-->
 <div data-role="page" id="job_orders">
 
 <!--HOME 1 [HEADER 1]-->
@@ -50,6 +50,14 @@
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#job_orders_0">Fri 6th Jun</a></li>
+        <li><a href="#job_orders"  class="ui-btn-active ui-state-persist">Sat 7th Jun</a></li>
+        <li><a href="#job_orders_1">Sun 8th Jun</a></li>
+      </ul>
+    </div>
+    
   </div>
   
 <!--PANEL (START)-->
@@ -58,8 +66,8 @@
     <!--PANEL CONTENTS (START)-->
     <div data-role="controlgroup" data-type="horizontal|vertical">
       <a href="#login_page" class="ui-btn">Log Out</a>
-      <a href="#" class="ui-btn">Button 2</a>
-      <a href="#" class="ui-btn">Button 3</a>
+      <!--<!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
     </div>
     <!--PANEL CONTENTS (END)-->
     
@@ -67,69 +75,69 @@
 <!--PANEL (END)-->
 
 <!--JOB ORDERS CONTENTS-->
-  <div data-role="main" class="ui-content">
+  <div data-role="main" class="ui-content" style="margin-top: -20px;">
   
     <!--list of job orders added [with search function included with the form tags]-->
     <form class="ui-filterable">
-      <input id="myFilter" data-type="search">
+      <input id="myFilter" data-type="search" placeholder="Enter sector code eg. 65 ">
     </form>
     
     <ul data-role="listview" data-filter="true" data-input="#myFilter">
     
       <!--WEST REGION-->
       <li data-role="list-divider">West</li>
-      <li>
+      <li data-filtertext="60">
       <!--1st job-->
       <!--PAGE 2-1 / Details-->
-      <a href="#page2-1" data-transition="slide">Bedok to Changi Warehouse</a>
+      <a href="#page2-1" data-transition="slide">Jurong West > Changi Warehouse</a>
       </li>
       
-      <li>
+      <li data-filtertext="65">
       <!--2nd job-->
       <!--PAGE 2-2 / Details-->
-      <a href="#page2-2" data-transition="slide">Bukit Batok to Jurong Warehouse</a>
+      <a href="#page2-2" data-transition="slide">Bukit Panjang > Jurong Warehouse</a>
       </li>
       
       <!--NORTH REGION-->
       <li data-role="list-divider">North</li>
-      <li>
+      <li data-filtertext="56">
       <!--3rd job-->
       <!--PAGE 2-3 / Details-->
-      <a href="#pagetwo" data-transition="slide">Admiralty to Penang Warehouse</a>
+      <a href="#page2-3" data-transition="slide">Bishan > Penang Warehouse</a>
       </li>
     
-      <li>
+      <li data-filtertext="72">
       <!--4th job-->
       <!--PAGE 2-4 / Details-->
-      <a href="#pagetwo" data-transition="slide">Lavendar to Simei Warehouse</a>
+      <a href="#page2-4" data-transition="slide">Kranji > Simei Warehouse</a>
       </li>
     
       <!--EAST REGION-->
       <li data-role="list-divider">East</li>
-      <li>
+      <li data-filtertext="52">
       <!--5th job-->
       <!--PAGE 2-5 / Details-->
-      <a href="#pagetwo" data-transition="slide">Joo Koon to Dover Warehouse</a>
+      <a href="#page2-5" data-transition="slide">Pasir Ris > Dover Warehouse</a>
       </li>
       
-      <li>
+      <li data-filtertext="46">
       <!--6th job-->
       <!--PAGE 2-6 / Details-->
-      <a href="#pagetwo" data-transition="slide">Joo Koon to Dover Warehouse</a>
+      <a href="#page2-6" data-transition="slide">Bedok > Paya Lebar Warehouse</a>
       </li>
       
       <!--SOUTH REGION-->
       <li data-role="list-divider">South</li>
-      <li>
+      <li data-filtertext="06">
       <!--7th job-->
       <!--PAGE 2-7 / Details-->
-      <a href="#pagetwo" data-transition="slide">Joo Koon to Dover Warehouse</a>
+      <a href="#page2-7" data-transition="slide">Marina Bay > Dover Warehouse</a>
       </li>
       
-      <li>
+      <li data-filtertext="10">
       <!--8th job-->
       <!--PAGE 2-8 / Details-->
-      <a href="#pagetwo" data-transition="slide">Joo Koon to Dover Warehouse</a>
+      <a href="#page2-8" data-transition="slide">Harbour Front > Marina Bay Warehouse</a>
       </li>
 
       
@@ -152,21 +160,21 @@
 
 <!--HOME 2-1 [HEADER 2]-->
   <div data-role="header">
-    <a href="#myPanel1" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel_1" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
   </div>
 
 <!--PANEL (START)-->
-<div data-role="panel" id="myPanel1"> 
+<div data-role="panel" id="myPanel_1"> 
     <h3>Menu</h3>
     
     <!--PANEL CONTENTS (START)-->
     <div data-role="controlgroup" data-type="horizontal|vertical">
       <a href="#login_page" class="ui-btn" data-transition="fade">Log Out</a>
-      <a href="#" class="ui-btn">Button 2</a>
-      <a href="#" class="ui-btn">Button 3</a>
+      <!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
     </div>
     <!--PANEL CONTENTS (END)-->
     
@@ -180,7 +188,38 @@
   
   <tr align="center">
     <td>
-    <b>Bedok to Changi Warehouse</b>
+  
+    <!--1st Job Details (below)-->
+    <table border="1" bordercolor="#CCCCCC" align="center" width="100%">
+    	<tr>
+        	<td><b>Job ID: </b></td>
+            <td>20140505-BMW-00</td>
+        </tr>
+        <tr>
+        	<td><b>From: </b></td>
+            <td>BLK 888 Jurong West Ave 6 Singapore 650115</td>
+        <tr>
+        	<td><b>To: </b></td>
+            <td>BLK 61A Changi Warehouse Singapore 784115</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td><b>Receiving: </b></td>
+            <td>Mr Asri</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td>&nbsp;</td>
+            <td>SPK Pte Ltd</td>
+        </tr>
+        <tr>
+        	<td><b>Date assigned: </b></td>
+            <td>28/05/2014</td>
+        </tr>
+        <tr>
+        	<td><b>By: </b></td>
+            <td>Muhd Faisal</td>
+        </tr>
+    </table>
+	<!--1st Job Details (above)-->
     </td>
   </tr>
   
@@ -218,21 +257,21 @@
 
 <!--HOME 2-2 [HEADER 2]-->
   <div data-role="header">
-    <a href="#myPanel2" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <a href="#myPanel_2" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
     <h1>Job Orders</h1>
     <!--
     <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
   </div>
 
 <!--PANEL (START)-->
-<div data-role="panel" id="myPanel2"> 
+<div data-role="panel" id="myPanel_2"> 
     <h3>Menu</h3>
     
     <!--PANEL CONTENTS (START)-->
     <div data-role="controlgroup" data-type="horizontal|vertical">
       <a href="#login_page" class="ui-btn" data-transition="fade">Log Out</a>
-      <a href="#" class="ui-btn">Button 2</a>
-      <a href="#" class="ui-btn">Button 3</a>
+      <!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
     </div>
     <!--PANEL CONTENTS (END)-->
     
@@ -246,7 +285,40 @@
   
   <tr align="center">
     <td>
-    <b>Bukit Batok to Jurong Warehouse</b>
+    
+    <!--1st Job Details (below)-->
+    <table border="1" bordercolor="#CCCCCC" align="center" width="100%">
+    	<tr>
+        	<td><b>Job ID: </b></td>
+            <td>20140505-BMW-00</td>
+        </tr>
+        <tr>
+        	<td><b>From: </b></td>
+            <td>BLK 888 Bukit Panjang Ave 6 Singapore 650115</td>
+        <tr>
+        	<td><b>To: </b></td>
+            <td>BLK 54B Jurong Warehouse Singapore 784115</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td><b>Receiving: </b></td>
+            <td>Mr Asri</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td>&nbsp;</td>
+            <td>SPK Pte Ltd</td>
+        </tr>
+        <tr>
+        	<td><b>Date assigned: </b></td>
+            <td>28/05/2014</td>
+        </tr>
+        <tr>
+        	<td><b>By: </b></td>
+            <td>Muhd Faisal</td>
+        </tr>
+    </table>
+	<!--1st Job Details (above)-->
+    
+    
     </td>
   </tr>
   
@@ -275,6 +347,628 @@
   </div>-->
 </div> 
 
+
+
+
+<!--################################-->
+<!--################################-->
+<!--PAGE 2-3 / Details-->
+<div data-role="page" id="page2-3">
+
+<!--HOME 2-3 [HEADER 3]-->
+  <div data-role="header">
+    <a href="#myPanel_3" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <h1>Job Orders</h1>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+  </div>
+
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel_3"> 
+    <h3>Menu</h3>
+    
+    <!--PANEL CONTENTS (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn" data-transition="fade">Log Out</a>
+      <!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
+    </div>
+    <!--PANEL CONTENTS (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--PAGE 2-3 DETAIL CONTENTS-->
+  <div data-role="main" class="ui-content">
+  
+  <table border="0" width="100%" align="center">
+  
+  <tr align="center">
+    <td>
+    
+    <!--1st Job Details (below)-->
+    <table border="1" bordercolor="#CCCCCC" align="center" width="100%">
+    	<tr>
+        	<td><b>Job ID: </b></td>
+            <td>20140505-BMW-03</td>
+        </tr>
+        <tr>
+        	<td><b>From: </b></td>
+            <td>BLK 44 Bishan Ave 6 Singapore 650115</td>
+        <tr>
+        	<td><b>To: </b></td>
+            <td>BLK 23A Penang Warehouse MY 784115</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td><b>Receiving: </b></td>
+            <td>Mr Ali</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td>&nbsp;</td>
+            <td>SPK Pte Ltd</td>
+        </tr>
+        <tr>
+        	<td><b>Date assigned: </b></td>
+            <td>28/05/2014</td>
+        </tr>
+        <tr>
+        	<td><b>By: </b></td>
+            <td>Muhd Faisal</td>
+        </tr>
+    </table>
+	<!--1st Job Details (above)-->
+    
+    
+    </td>
+  </tr>
+  
+   <tr align="center">
+    <td>
+    
+    <!--map code (below)-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+    <!--map code (above)-->
+    
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    	<a href="#job_orders" class="ui-btn" data-transition="slide" data-direction="reverse">Return</a>
+    </td>
+  </tr>
+
+</table>
+  </div>
+
+<!--
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
+</div> 
+
+
+<!--################################-->
+<!--################################-->
+<!--PAGE 2-4 / Details-->
+<div data-role="page" id="page2-4">
+
+<!--HOME 2-4 [HEADER 4]-->
+  <div data-role="header">
+    <a href="#myPanel_4" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <h1>Job Orders</h1>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+  </div>
+
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel_4"> 
+    <h3>Menu</h3>
+    
+    <!--PANEL CONTENTS (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn" data-transition="fade">Log Out</a>
+      <!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
+    </div>
+    <!--PANEL CONTENTS (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--PAGE 2-4 DETAIL CONTENTS-->
+  <div data-role="main" class="ui-content">
+  
+  <table border="0" width="100%" align="center">
+  
+  <tr align="center">
+    <td>
+    
+    <!--1st Job Details (below)-->
+    <table border="1" bordercolor="#CCCCCC" align="center" width="100%">
+    	<tr>
+        	<td><b>Job ID: </b></td>
+            <td>20140505-BMW-04</td>
+        </tr>
+        <tr>
+        	<td><b>From: </b></td>
+            <td>BLK 24 Kranji Ave 6 Singapore 676215</td>
+        <tr>
+        	<td><b>To: </b></td>
+            <td>BLK 23A Simei Warehouse Singapore 784115</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td><b>Receiving: </b></td>
+            <td>Mr Ali</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td>&nbsp;</td>
+            <td>SPK Pte Ltd</td>
+        </tr>
+        <tr>
+        	<td><b>Date assigned: </b></td>
+            <td>28/05/2014</td>
+        </tr>
+        <tr>
+        	<td><b>By: </b></td>
+            <td>Muhd Faisal</td>
+        </tr>
+    </table>
+	<!--1st Job Details (above)-->
+    
+    
+    </td>
+  </tr>
+  
+   <tr align="center">
+    <td>
+    
+    <!--map code (below)-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+    <!--map code (above)-->
+    
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    	<a href="#job_orders" class="ui-btn" data-transition="slide" data-direction="reverse">Return</a>
+    </td>
+  </tr>
+
+</table>
+  </div>
+
+<!--
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
+</div> 
+
+
+<!--################################-->
+<!--################################-->
+<!--PAGE 2-5 / Details-->
+<div data-role="page" id="page2-5">
+
+<!--HOME 2-5 [HEADER 5]-->
+  <div data-role="header">
+    <a href="#myPanel_5" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <h1>Job Orders</h1>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+  </div>
+
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel_5"> 
+    <h3>Menu</h3>
+    
+    <!--PANEL CONTENTS (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn" data-transition="fade">Log Out</a>
+      <!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
+    </div>
+    <!--PANEL CONTENTS (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--PAGE 2-5 DETAIL CONTENTS-->
+  <div data-role="main" class="ui-content">
+  
+  <table border="0" width="100%" align="center">
+  
+  <tr align="center">
+    <td>
+    
+    <!--1st Job Details (below)-->
+    <table border="1" bordercolor="#CCCCCC" align="center" width="100%">
+    	<tr>
+        	<td><b>Job ID: </b></td>
+            <td>20140505-BMW-05</td>
+        </tr>
+        <tr>
+        	<td><b>From: </b></td>
+            <td>BLK 33 Pasir Ris Ave 6 Singapore 676215</td>
+        <tr>
+        	<td><b>To: </b></td>
+            <td>BLK 3A Dover Warehouse Singapore 784115</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td><b>Receiving: </b></td>
+            <td>Mr Ali</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td>&nbsp;</td>
+            <td>KPL Pte Ltd</td>
+        </tr>
+        <tr>
+        	<td><b>Date assigned: </b></td>
+            <td>23/05/2014</td>
+        </tr>
+        <tr>
+        	<td><b>By: </b></td>
+            <td>Muhd Faisal</td>
+        </tr>
+    </table>
+	<!--1st Job Details (above)-->
+    
+    
+    </td>
+  </tr>
+  
+   <tr align="center">
+    <td>
+    
+    <!--map code (below)-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+    <!--map code (above)-->
+    
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    	<a href="#job_orders" class="ui-btn" data-transition="slide" data-direction="reverse">Return</a>
+    </td>
+  </tr>
+
+</table>
+  </div>
+
+<!--
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
+</div> 
+
+
+<!--################################-->
+<!--################################-->
+<!--PAGE 2-6 / Details-->
+<div data-role="page" id="page2-5">
+
+<!--HOME 2-6 [HEADER 6]-->
+  <div data-role="header">
+    <a href="#myPanel_6" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    <h1>Job Orders</h1>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+  </div>
+
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel_6"> 
+    <h3>Menu</h3>
+    
+    <!--PANEL CONTENTS (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn" data-transition="fade">Log Out</a>
+      <!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
+    </div>
+    <!--PANEL CONTENTS (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--PAGE 2-6 DETAIL CONTENTS-->
+  <div data-role="main" class="ui-content">
+  
+  <table border="0" width="100%" align="center">
+  
+  <tr align="center">
+    <td>
+    
+    <!--1st Job Details (below)-->
+    <table border="1" bordercolor="#CCCCCC" align="center" width="100%">
+    	<tr>
+        	<td><b>Job ID: </b></td>
+            <td>20140505-BMW-06</td>
+        </tr>
+        <tr>
+        	<td><b>From: </b></td>
+            <td>BLK 90 Changi Ave 6 Singapore 676215</td>
+        <tr>
+        	<td><b>To: </b></td>
+            <td>BLK 4D Paya Lebar Warehouse Singapore 784115</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td><b>Receiving: </b></td>
+            <td>Mr Ali</td>
+        </tr>
+        <tr bgcolor="#daedf4">
+        	<td>&nbsp;</td>
+            <td>KPL Pte Ltd</td>
+        </tr>
+        <tr>
+        	<td><b>Date assigned: </b></td>
+            <td>23/05/2014</td>
+        </tr>
+        <tr>
+        	<td><b>By: </b></td>
+            <td>Muhd Faisal</td>
+        </tr>
+    </table>
+	<!--1st Job Details (above)-->
+    
+    
+    </td>
+  </tr>
+  
+   <tr align="center">
+    <td>
+    
+    <!--map code (below)-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63818.304695385275!2d103.898624!3d1.390135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1401802523251" width="100%" height="80%" frameborder="0" style="border:0"></iframe>
+    <!--map code (above)-->
+    
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+    	<a href="#job_orders" class="ui-btn" data-transition="slide" data-direction="reverse">Return</a>
+    </td>
+  </tr>
+
+</table>
+  </div>
+
+<!--
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
+</div> 
+
+
+
+<!--################################-->
+<!--################################-->
+<!--PAGE 1 FRIDAY [LEFT]/ JOB ORDERS-->
+<div data-role="page" id="job_orders_0">
+
+<!--HOME 1 [HEADER 1]-->
+  <div data-role="header">
+  	<!--menu-->
+    
+    <a href="#myPanel0" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    
+    <h1>Job Orders</h1>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#job_orders_0" class="ui-btn-active ui-state-persist">Fri 6th Jun</a></li>
+        <li><a href="#job_orders">Sat 7th Jun</a></li>
+        <li><a href="#job_orders_1">Sun 8th Jun</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel0"> 
+    <h3>Menu</h3>
+    <!--PANEL CONTENTS (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn">Log Out</a>
+      <!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
+    </div>
+    <!--PANEL CONTENTS (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--JOB ORDERS CONTENTS-->
+  <div data-role="main" class="ui-content" style="margin-top: -20px;">
+  
+    <!--list of job orders added [with search function included with the form tags]-->
+    <form class="ui-filterable">
+      <input id="myFilter0" data-type="search" placeholder="Enter sector code eg. 73 ">
+    </form>
+    
+    <ul data-role="listview" data-filter="true" data-input="#myFilter0">
+    
+      <!--WEST REGION-->
+      <li data-role="list-divider">West</li>
+      <li data-filtertext="66">
+      <!--1st job-->
+      <!--PAGE 2-1 / Details-->
+      <a href="#" data-transition="slide">Hillview > Changi Warehouse</a>
+      </li>
+      
+      <li data-filtertext="68">
+      <!--2nd job-->
+      <!--PAGE 2-2 / Details-->
+      <a href="#" data-transition="slide">Chua Chu Kang > Jurong Warehouse</a>
+      </li>
+      
+      <!--NORTH REGION-->
+      <li data-role="list-divider">North</li>
+      <li data-filtertext="56">
+      <!--3rd job-->
+      <!--PAGE 2-3 / Details-->
+      <a href="#" data-transition="slide">Ang Mo Kio > Penang Warehouse</a>
+      </li>
+    
+      <li data-filtertext="73">
+      <!--4th job-->
+      <!--PAGE 2-4 / Details-->
+      <a href="#" data-transition="slide">Woodgrove > Simei Warehouse</a>
+      </li>
+    
+      <!--EAST REGION-->
+      <li data-role="list-divider">East</li>
+      <li data-filtertext="51">
+      <!--5th job-->
+      <!--PAGE 2-5 / Details-->
+      <a href="#" data-transition="slide">Tampines > Dover Warehouse</a>
+      </li>
+      
+      <li data-filtertext="46">
+      <!--6th job-->
+      <!--PAGE 2-6 / Details-->
+      <a href="#" data-transition="slide">Bedok > Paya Lebar Warehouse</a>
+      </li>
+      
+      <!--SOUTH REGION-->
+      <li data-role="list-divider">South</li>
+      <li data-filtertext="06">
+      <!--7th job-->
+      <!--PAGE 2-7 / Details-->
+      <a href="#" data-transition="slide">Marina Bay > Dover Warehouse</a>
+      </li>
+      
+      <li data-filtertext="10">
+      <!--8th job-->
+      <!--PAGE 2-8 / Details-->
+      <a href="#" data-transition="slide">Harbour Front > Marina Bay Warehouse</a>
+      </li>
+      
+    </ul>
+    <!--unordered list added above-->
+  </div>
+
+<!--<div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
+</div>
+
+
+<!--################################-->
+<!--################################-->
+<!--PAGE 1 SUNDAY [RIGHT]/ JOB ORDERS-->
+<div data-role="page" id="job_orders_1">
+
+<!--HOME 1 [HEADER 1]-->
+  <div data-role="header">
+  	<!--menu-->
+    
+    <a href="#myPanel1" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+    
+    <h1>Job Orders</h1>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#job_orders_0">Fri 6th Jun</a></li>
+        <li><a href="#job_orders">Sat 7th Jun</a></li>
+        <li><a href="#job_orders_1" class="ui-btn-active ui-state-persist">Sun 8th Jun</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel1"> 
+    <h3>Menu</h3>
+    <!--PANEL CONTENTS (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn">Log Out</a>
+      <!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
+    </div>
+    <!--PANEL CONTENTS (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--JOB ORDERS CONTENTS-->
+  <div data-role="main" class="ui-content" style="margin-top: -20px;">
+  
+    <!--list of job orders added [with search function included with the form tags]-->
+    <form class="ui-filterable">
+      <input id="myFilter1" data-type="search" placeholder="Enter sector code eg. 76 ">
+    </form>
+    
+    <ul data-role="listview" data-filter="true" data-input="#myFilter1">
+    
+      <!--WEST REGION-->
+      <li data-role="list-divider">West</li>
+      <li data-filtertext="70">
+      <!--1st job-->
+      <!--PAGE 2-1 / Details-->
+      <a href="#" data-transition="slide">Lim Chu Kang > Changi Warehouse</a>
+      </li>
+      
+      <li data-filtertext="26">
+      <!--2nd job-->
+      <!--PAGE 2-2 / Details-->
+      <a href="#" data-transition="slide">Bukit Timah > Jurong Warehouse</a>
+      </li>
+      
+      <!--NORTH REGION-->
+      <li data-role="list-divider">North</li>
+      <li data-filtertext="75">
+      <!--3rd job-->
+      <!--PAGE 2-3 / Details-->
+      <a href="#" data-transition="slide">Yishun > Penang Warehouse</a>
+      </li>
+    
+      <li data-filtertext="76">
+      <!--4th job-->
+      <!--PAGE 2-4 / Details-->
+      <a href="#" data-transition="slide">Sembawang > Simei Warehouse</a>
+      </li>
+    
+      <!--EAST REGION-->
+      <li data-role="list-divider">East</li>
+      <li data-filtertext="49">
+      <!--5th job-->
+      <!--PAGE 2-5 / Details-->
+      <a href="#" data-transition="slide">Loyang > Dover Warehouse</a>
+      </li>
+      
+      <li data-filtertext="81">
+      <!--6th job-->
+      <!--PAGE 2-6 / Details-->
+      <a href="#" data-transition="slide">Changi > Paya Lebar Warehouse</a>
+      </li>
+      
+      <!--SOUTH REGION-->
+      <li data-role="list-divider">South</li>
+      <li data-filtertext="06">
+      <!--7th job-->
+      <!--PAGE 2-7 / Details-->
+      <a href="#" data-transition="slide">Marina Bay > Dover Warehouse</a>
+      </li>
+      
+      <li data-filtertext="10">
+      <!--8th job-->
+      <!--PAGE 2-8 / Details-->
+      <a href="#" data-transition="slide">Harbour Front > Marina Bay Warehouse</a>
+      </li>
+      
+    </ul>
+    <!--unordered list added above-->
+  </div>
+
+<!--<div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
+</div>
 
 
 </body>
