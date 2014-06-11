@@ -7,6 +7,11 @@
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 
+<!--Text to Speech-->
+	<script src="speakGenerator.js"></script>
+    <script src="speakClient.js"></script>
+<!--Text to Speech-->
+
 <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 
 </head>
@@ -89,7 +94,8 @@
       <li data-filtertext="60">
       <!--1st job-->
       <!--PAGE 2-1 / Details-->
-      <a href="#page2-1" data-transition="slide">Jurong West > Changi Warehouse</a>
+      <a href="#page2-1" data-transition="slide">Jurong West > Changi Warehouse
+      </a>
       </li>
       
       <li data-filtertext="65">
@@ -198,10 +204,22 @@
         <tr>
         	<td><b>From: <br/><br/><br/><br/></b></td>
             <td>BLK 888 Jurong West Ave 6 <br/>Singapore 650115 <br/>
-            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.710376913569!2d103.7254275!3d1.3502988999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fded1853553%3A0xf419ce15ac316009!2s6+Jurong+West+Avenue+1!5e0!3m2!1sen!2s!4v1401957199385" target="map1-0" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
+            <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.710376913569!2d103.7254275!3d1.3502988999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fded1853553%3A0xf419ce15ac316009!2s6+Jurong+West+Avenue+1!5e0!3m2!1sen!2s!4v1401957199385" target="map1-0" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a>
+            </td>
+            <td>            
+          <!--text to speech-->
+          <div onclick="speak('block 888 Jurong West Avenue 6 Singapore 650115')" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div><div id="audio"></div>
+          <!--text to speech-->
+            <br/><br/></td>
         <tr>
         	<td><b>To: <br/><br/><br/><br/></b></td>
             <td>BLK 61A Changi Warehouse <br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63819.32317968105!2d103.99887695000001!3d1.3519299999999903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3c396b91ad1f%3A0x921d79f3ad5d2e7f!2sChangi!5e0!3m2!1sen!2s!4v1401957283326" target="map1-0" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
+            <td>
+            <!--text to speech-->
+          <div onclick="speak('block 61A Changi Warehouse Singapore 784115')" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div><div id="audio"></div>
+          <!--text to speech-->
+            <br/><br/>
+            </td>
         </tr>
         <tr bgcolor="#daedf4">
         	<td><b>Receiving: </b></td>
