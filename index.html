@@ -8,8 +8,13 @@
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 
 <!--Text to Speech-->
-	<script src="speakGenerator.js"></script>
-    <script src="speakClient.js"></script>
+<script language="javascript" type="text/javascript">
+function playSound(soundfile) {
+  document.getElementById("dummy").innerHTML=
+    "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+}
+</script>
+
 <!--Text to Speech-->
 
 <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
@@ -208,15 +213,19 @@
             </td>
             <td>            
           <!--text to speech-->
-          <div onclick="speak('block 888 Jurong West Avenue 6 Singapore 650115')" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div><div id="audio"></div>
-          <!--text to speech-->
-            <br/><br/></td>
+<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 888 Jurong West Ave 6 Singapore 650115');"><div id="dummy" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+		<!--text to speech-->
+        <br/><br/>
+        </td>
         <tr>
         	<td><b>To: <br/><br/><br/><br/></b></td>
             <td>BLK 61A Changi Warehouse <br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63819.32317968105!2d103.99887695000001!3d1.3519299999999903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3c396b91ad1f%3A0x921d79f3ad5d2e7f!2sChangi!5e0!3m2!1sen!2s!4v1401957283326" target="map1-0" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
             <td>
             <!--text to speech-->
-          <div onclick="speak('block 61A Changi Warehouse Singapore 784115')" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div><div id="audio"></div>
+          <!--text to speech-->
+<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 61A Changi Warehouse Singapore 784115');"><div id="dummy" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+		<!--text to speech-->
+
           <!--text to speech-->
             <br/><br/>
             </td>
