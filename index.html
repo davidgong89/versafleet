@@ -8,14 +8,14 @@
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 
 <!--Text to Speech-->
-<script type="text/javascript">
+<!--<script type="text/javascript">
 
 function playSound(soundfile) {
 	//alert("hi in playSound 222");
     document.getElementById('justreadoutforall').innerHTML=
     "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
 	}
-</script>
+</script>-->
 
 <!--Text to Speech-->                                                     
 
@@ -216,7 +216,7 @@ function playSound(soundfile) {
 
    		<td>            
           <!--text to speech-->
-<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 888 Jurong West Ave 6 Singapore 650115');">
+<a href="http://tts-api.com/tts.mp3?q=block 888 Jurong West Ave 6 Singapore 650115" target="sound1">
 <div class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
 		<!--text to speech-->
         <br/><br/>
@@ -228,7 +228,7 @@ function playSound(soundfile) {
             
            <td>            
           <!--text to speech-->
-<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 61A Chanyi Warehouse Singapore 784115');"><div class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+<a href="http://tts-api.com/tts.mp3?q=block 61A Chanyi Warehouse Singapore 784115" target="sound1"><div class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
 		<!--text to speech-->
         <br/><br/>
         </td>
@@ -261,7 +261,7 @@ function playSound(soundfile) {
     
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.710376913569!2d103.7254275!3d1.3502988999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0fded1853553%3A0xf419ce15ac316009!2s6+Jurong+West+Avenue+1!5e0!3m2!1sen!2s!4v1401957199385" width="100%" height="90%" frameborder="0" style="border:0" name="map1-0"></iframe>
     <!--map code (above)-->
-    <div id="justreadoutforall"></div>
+    <iframe style="visibility:hidden;display:none" frameborder="0" name="sound1"></iframe>
     </td>
   </tr>
   
@@ -331,7 +331,7 @@ function playSound(soundfile) {
             <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.660784063224!2d103.76319499999998!3d1.3801900000000038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11bcce58a3d3%3A0x6c0ffa4d63b9bbe3!2s6+Bukit+Panjang+Rd!5e0!3m2!1sen!2s!4v1401959363572" target="map1-2" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
              <td>
           <!--text to speech-->
-<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 888 Bukit Panjang Avenue 6 Singapore 650115');"><div id="" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+<a href="http://tts-api.com/tts.mp3?q=block 888 Bukit Panjang Avenue 6 Singapore 650115" target="sound2"><div class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
 		<!--text to speech-->
 
             <br/><br/>
@@ -342,7 +342,7 @@ function playSound(soundfile) {
             
             <td>
           <!--text to speech-->
-<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 54B Jurong WarehouseSingapore 784115');"><div class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+<a href="http://tts-api.com/tts.mp3?q=block 54B Jurong WarehouseSingapore 784115" target="sound2"><div class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
 		<!--text to speech-->
 
             <br/><br/>
@@ -366,7 +366,7 @@ function playSound(soundfile) {
             <td>Muhd Faisal</td>
         </tr>
     </table>
-	<!--1st Job Details (above)-->
+	<!--2nd Job Details (above)-->
     
     
     </td>
@@ -378,7 +378,7 @@ function playSound(soundfile) {
     <!--map code (below)-->
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.660784063224!2d103.76319499999998!3d1.3801900000000038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11bcce58a3d3%3A0x6c0ffa4d63b9bbe3!2s6+Bukit+Panjang+Rd!5e0!3m2!1sen!2s!4v1401959363572" width="100%" height="90%" frameborder="0" style="border:0" name="map1-2"></iframe>
     <!--map code (above)-->
-    
+    <iframe style="visibility:hidden;display:none" frameborder="0" name="sound2"></iframe>
     </td>
   </tr>
   
@@ -450,7 +450,7 @@ function playSound(soundfile) {
             <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7108028654225!2d103.84904790000002!3d1.3500393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1716bd874539%3A0x8bd8e47976c5d263!2s6+Bishan+Pl!5e0!3m2!1sen!2s!4v1401960089361" target="map1-3" class="ui-btn ui-icon-info  ui-corner-all ui-btn-icon-notext"></a></td>
             <td>
           <!--text to speech-->
-<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 44 Beshan Avenue 6 Singapore 650115 ');"><div class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+<a href="http://tts-api.com/tts.mp3?q=block 44 Beshan Avenue 6 Singapore 650115" target="sound3"><div class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
 		<!--text to speech-->
 
             <br/><br/>
@@ -461,7 +461,7 @@ function playSound(soundfile) {
             <td>BLK 23A Penang Warehouse <br/>MY 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127110.21733287512!2d100.30257729778899!3d5.387331017084949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPenang+Warehouse!5e0!3m2!1sen!2s!4v1401960142891" target="map1-3" class="ui-btn ui-icon-info ui-corner-all  ui-btn-icon-notext"></a></td>
                         <td>
           <!--text to speech-->
-<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 23A Penang Warehouse Malaysia 784115');"><div class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+<a href="http://tts-api.com/tts.mp3?q=block 23A Penang Warehouse Malaysia 784115" target="sound3"><div class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
 		<!--text to speech-->
 
             <br/><br/>
@@ -499,7 +499,7 @@ function playSound(soundfile) {
     <!--map code (below)-->
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7108028654225!2d103.84904790000002!3d1.3500393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1716bd874539%3A0x8bd8e47976c5d263!2s6+Bishan+Pl!5e0!3m2!1sen!2s!4v1401960089361" width="100%" height="90%" frameborder="0" style="border:0" name="map1-3"></iframe>
     <!--map code (above)-->
-    
+    <iframe style="visibility:hidden;display:none" frameborder="0" name="sound3"></iframe>
     </td>
   </tr>
   
