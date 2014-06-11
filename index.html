@@ -10,7 +10,13 @@
 <!--Text to Speech-->
 <script language="javascript" type="text/javascript">
 function playSound(soundfile) {
-  document.getElementById("dummy").innerHTML=
+  document.getElementById("sound").innerHTML=
+    "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+	
+	document.getElementById("sound1").innerHTML=
+    "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+
+document.getElementById("sound2").innerHTML=
     "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
 }
 </script>
@@ -213,7 +219,7 @@ function playSound(soundfile) {
             </td>
             <td>            
           <!--text to speech-->
-<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 888 Jurong West Ave 6 Singapore 650115');"><div id="dummy" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 888 Jurong West Avenue 6 Singapore 650115');"><div id="sound" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
 		<!--text to speech-->
         <br/><br/>
         </td>
@@ -221,12 +227,10 @@ function playSound(soundfile) {
         	<td><b>To: <br/><br/><br/><br/></b></td>
             <td>BLK 61A Changi Warehouse <br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63819.32317968105!2d103.99887695000001!3d1.3519299999999903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3c396b91ad1f%3A0x921d79f3ad5d2e7f!2sChangi!5e0!3m2!1sen!2s!4v1401957283326" target="map1-0" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
             <td>
-            <!--text to speech-->
           <!--text to speech-->
-<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 61A Changi Warehouse Singapore 784115');"><div id="dummy" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 61A Chanyi Warehouse Singapore 784115');"><div id="sound" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
 		<!--text to speech-->
 
-          <!--text to speech-->
             <br/><br/>
             </td>
         </tr>
@@ -325,9 +329,24 @@ function playSound(soundfile) {
         	<td><b>From: <br/><br/><br/><br/></b></td>
             <td>BLK 888 Bukit Panjang Ave 6<br/>Singapore 650115 <br/>
             <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.660784063224!2d103.76319499999998!3d1.3801900000000038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11bcce58a3d3%3A0x6c0ffa4d63b9bbe3!2s6+Bukit+Panjang+Rd!5e0!3m2!1sen!2s!4v1401959363572" target="map1-2" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
+             <td>
+          <!--text to speech-->
+<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 888 Bukit Panjang Avenue 6 Singapore 650115');"><div id="sound1" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+		<!--text to speech-->
+
+            <br/><br/>
+            </td>
         <tr>
         	<td><b>To: <br/><br/><br/><br/></b></td>
             <td>BLK 54B Jurong Warehouse<br/>Singapore 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.771996165275!2d103.67897913491821!3d1.3122110546700552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da059ef14eb635%3A0x82eaaa13d71c6a28!2sCentral+Engineering+Pte+Ltd+Jurong+Warehouse!5e0!3m2!1sen!2s!4v1401959487201" target="map1-2" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-notext"></a></td>
+            
+            <td>
+          <!--text to speech-->
+<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 54B Jurong WarehouseSingapore 784115');"><div id="sound1" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+		<!--text to speech-->
+
+            <br/><br/>
+            </td>
         </tr>
        
         <tr bgcolor="#daedf4">
@@ -429,9 +448,25 @@ function playSound(soundfile) {
         	<td><b>From: <br/><br/><br/><br/></b></td>
             <td>BLK 44 Bishan Ave 6 <br/>Singapore 650115 <br/>
             <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7108028654225!2d103.84904790000002!3d1.3500393!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1716bd874539%3A0x8bd8e47976c5d263!2s6+Bishan+Pl!5e0!3m2!1sen!2s!4v1401960089361" target="map1-3" class="ui-btn ui-icon-info  ui-corner-all ui-btn-icon-notext"></a></td>
+            <td>
+          <!--text to speech-->
+<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 44 Beshan Avenue 6 Singapore 650115 ');"><div id="sound2" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+		<!--text to speech-->
+
+            <br/><br/>
+            </td>
+            
         <tr>
         	<td><b>To: <br/><br/><br/><br/></b></td>
             <td>BLK 23A Penang Warehouse <br/>MY 784115 <br/><a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127110.21733287512!2d100.30257729778899!3d5.387331017084949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPenang+Warehouse!5e0!3m2!1sen!2s!4v1401960142891" target="map1-3" class="ui-btn ui-icon-info ui-corner-all  ui-btn-icon-notext"></a></td>
+                        <td>
+          <!--text to speech-->
+<a href="#" onclick="playSound('http://tts-api.com/tts.mp3?q=block 23A Penang Warehouse Malaysia 784115');"><div id="sound2" class="ui-btn ui-corner-all ui-icon-audio ui-btn-icon-notext"></div></a>
+		<!--text to speech-->
+
+            <br/><br/>
+            </td>
+            
         </tr>
         
         
