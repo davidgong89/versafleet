@@ -33,7 +33,7 @@ function playSound(soundfile) {
       <form method="post" action="demoform.asp">
         <div>
           <div align="center"><img src="versafleet_logo.png" alt="versafleet" width="250px"/></div>
-          <h3 align="center">Login information</h3>
+          <h3 align="center">Login</h3>
           <label for="usrnm" class="ui-hidden-accessible">Username:</label>
           <input type="text" name="user" id="usrnm" placeholder="Username">
           <label for="pswd" class="ui-hidden-accessible">Password:</label>
@@ -91,21 +91,21 @@ function playSound(soundfile) {
   
     <!--list of job orders added [with search function included with the form tags]-->
     <form class="ui-filterable">
-      <input id="myFilter" data-type="search" placeholder="Enter sector code eg. 65 ">
+      <input id="myFilter" data-type="search" placeholder="Enter region eg. south ">
     </form>
     
     <ul data-role="listview" data-filter="true" data-input="#myFilter">
     
       <!--WEST REGION-->
       <li data-role="list-divider">West</li>
-      <li data-filtertext="60">
+      <li data-filtertext="west">
       <!--1st job-->
       <!--PAGE 2-1 / Details-->
       <a href="#page2-1" data-transition="slide">Jurong West > Changi Warehouse
       </a>
       </li>
       
-      <li data-filtertext="65">
+      <li data-filtertext="west">
       <!--2nd job-->
       <!--PAGE 2-2 / Details-->
       <a href="#page2-2" data-transition="slide">Bukit Panjang > Jurong Warehouse</a>
@@ -113,13 +113,13 @@ function playSound(soundfile) {
       
       <!--NORTH REGION-->
       <li data-role="list-divider">North</li>
-      <li data-filtertext="56">
+      <li data-filtertext="north">
       <!--3rd job-->
       <!--PAGE 2-3 / Details-->
       <a href="#page2-3" data-transition="slide">Bishan > Penang Warehouse</a>
       </li>
     
-      <li data-filtertext="72">
+      <li data-filtertext="north">
       <!--4th job-->
       <!--PAGE 2-4 / Details-->
       <a href="#page2-4" data-transition="slide">Kranji > Simei Warehouse</a>
@@ -127,13 +127,13 @@ function playSound(soundfile) {
     
       <!--EAST REGION-->
       <li data-role="list-divider">East</li>
-      <li data-filtertext="52">
+      <li data-filtertext="east">
       <!--5th job-->
       <!--PAGE 2-5 / Details-->
       <a href="#page2-5" data-transition="slide">Pasir Ris > Dover Warehouse</a>
       </li>
       
-      <li data-filtertext="46">
+      <li data-filtertext="east">
       <!--6th job-->
       <!--PAGE 2-6 / Details-->
       <a href="#page2-6" data-transition="slide">Bedok > Paya Lebar Warehouse</a>
@@ -141,13 +141,13 @@ function playSound(soundfile) {
       
       <!--SOUTH REGION-->
       <li data-role="list-divider">South</li>
-      <li data-filtertext="06">
+      <li data-filtertext="south">
       <!--7th job-->
       <!--PAGE 2-7 / Details-->
       <a href="#page2-7" data-transition="slide">Marina Bay > Dover Warehouse</a>
       </li>
       
-      <li data-filtertext="10">
+      <li data-filtertext="south">
       <!--8th job-->
       <!--PAGE 2-8 / Details-->
       <a href="#page2-8" data-transition="slide">Harbour Front > Marina Bay Warehouse</a>
@@ -266,9 +266,12 @@ function playSound(soundfile) {
   </tr>
   
   <tr>
-    <td>
-    	<a href="#job_orders" class="ui-btn" data-transition="slide" data-direction="reverse">Return</a>
-    </td>
+      <td>
+          <div data-role="controlgroup" data-type="vertical">
+          <a href="#page2-1-POD" class="ui-btn" data-direction="slide">Proof of Delivery</a>
+          <a href="#job_orders" class="ui-btn" data-transition="slide" data-direction="reverse">Return</a>
+        </div>
+  	   </td>
   </tr>
 
 </table>
@@ -279,6 +282,234 @@ function playSound(soundfile) {
     <h1>Footer Text</h1>
   </div>-->
 </div> 
+
+
+<!--################################-->
+<!--################################-->
+<!--PAGE 2-1-POD / Details-->
+<div data-role="page" id="page2-1-POD">
+
+<!--HOME 2-1-POD [HEADER 2-1-POD]-->
+  <div data-role="header">
+    <a href="#myPanel_2_POD" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
+    <h1>Proof of Delivery</h1>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+  </div>
+
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel_2_POD"> 
+    <h3>Menu</h3>
+    
+    <!--PANEL CONTENTS (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn" data-transition="fade">Log Out</a>
+      <!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
+    </div>
+    <!--PANEL CONTENTS (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--PAGE 2-1-POD DETAIL CONTENTS-->
+  <div data-role="main" class="ui-content">
+ 
+  <table border="0" align="center">
+ 	 <tr>
+    	<td><b>Name of driver: </b></td>
+        <td>Muhd Faisal</td>
+     </tr>
+     <tr>
+        <td><b>Date/Time: </b></td>
+        <td><iframe src="clock.html" width="100%" height="20%" frameborder="0" style="border:0" scrolling="no"></iframe></td>
+     </tr>
+     <tr align="center">
+        <td colspan="2" style="text-decoration:underline"><br/><b>Job Details</b></td>
+     </tr>
+     <!--first job-->
+     <tr>
+        <td><b>Job ID: </b></td>
+        <td>20140505-BMW-02</td>
+     </tr>
+    <tr bgcolor="#add8e6">
+        <td><b>From: <br/><br/></b></td>
+        <td>BLK 888 Bukit Panjang Ave 6<br/>Singapore 650115
+        </td>
+    </tr>
+    <tr bgcolor="#add8e6">
+    	<td><b>To: <br/><br/></b></td>
+        <td>BLK 54B Jurong Warehouse<br/>Singapore 784115</td>
+    </tr>
+    <tr>
+    	<td colspan="2">
+        	<a href="#page2-1-POD-info" class="ui-btn" data-transition="slide">More Info</a>
+        </td>
+    </tr>
+    
+    <!--2nd job-->
+     <tr>
+        <td><b>Job ID: </b></td>
+        <td>20140505-BMW-03</td>
+     </tr>
+    <tr bgcolor="#add8e6">
+        <td><b>From: <br/><br/></b></td>
+        <td>BLK 333 Bukit Merah Ave 6<br/>Singapore 650115
+        </td>
+    </tr>
+    <tr bgcolor="#add8e6">
+    	<td><b>To: <br/><br/></b></td>
+        <td>BLK 44B Jurong Warehouse<br/>Singapore 784115</td>
+    </tr>
+    <tr>
+    	<td colspan="2">
+        	<a href="#page2-1-POD-info" class="ui-btn" data-transition="slide">More Info</a>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td><b>Consignee:</b></td>    
+        <td>&nbsp;&nbsp;BMW</td>     
+    </tr>  
+    <tr>
+    	<td><b>Name of Recipient:</b></td>
+        <td><input type="text" name="recipient" id="recipient"/></td>  
+    </tr>
+    <tr>
+    	<td><b>Signature:</b></td>
+        <td><textarea name="addinfo" id="info"></textarea></td>  
+    </tr>
+    
+   <tr align="center">
+    <td colspan="2">
+        <div data-role="controlgroup" data-type="vertical">
+          <a href="#" class="ui-btn">Save</a>
+          <a href="#page2-1" class="ui-btn" data-transition="slide" data-direction="reverse">Return</a>
+          <a href="#job_orders" class="ui-btn" data-transition="slide" data-direction="reverse">Job Orders Overview</a>
+        </div>
+    </td>
+  </tr>
+
+</table>
+  </div>
+
+<!--
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
+</div>
+
+
+<!--################################-->
+<!--################################-->
+<!--PAGE 2-1-POD-info / Details-->
+<div data-role="page" id="page2-1-POD-info">
+
+<!--HOME 2-1-POD-info [HEADER 2-1-POD-info]-->
+  <div data-role="header">
+    <a href="#myPanel_2_POD_info" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext">Menu</a>
+    <h1>Proof of Delivery</h1>
+    <!--
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>-->
+  </div>
+
+<!--PANEL (START)-->
+<div data-role="panel" id="myPanel_2_POD_info"> 
+    <h3>Menu</h3>
+    
+    <!--PANEL CONTENTS (START)-->
+    <div data-role="controlgroup" data-type="horizontal|vertical">
+      <a href="#login_page" class="ui-btn" data-transition="fade">Log Out</a>
+      <!--<a href="#" class="ui-btn">Button 2</a>
+      <a href="#" class="ui-btn">Button 3</a>-->
+    </div>
+    <!--PANEL CONTENTS (END)-->
+    
+  </div> 
+<!--PANEL (END)-->
+
+<!--PAGE 2-1-POD DETAIL CONTENTS-->
+  <div data-role="main" class="ui-content">
+ 
+  <table border="0" align="center">
+ 	 <tr>
+    	<td><b>Date of Order: </b></td>
+        <td>12/06/2014</td>
+     </tr>
+     <tr>
+        <td><b>Ordered by: </b></td>
+        <td>Mr Tan Kar Hin</td>
+     </tr>
+     <tr>
+        <td><b>Reference no:</b></td>
+        <td>FDG-356838</td>
+     </tr>
+     <tr>
+        <td><b>Description: </b></td>
+        <td>Aluminium Parts</td>
+     </tr>
+     
+     <!--dimensions-->
+    <tr bgcolor="#90ee90">
+    	<td><b>Total Weight:</b></td>
+        <td>2998KG</td>
+    </tr>
+     <tr bgcolor="#90ee90">
+    	<td><b>Total Volume:</b></td>
+        <td>10166 M&sup3;</td>
+    </tr>
+     <tr bgcolor="#90ee90">
+    	<td><b>Total Packs:</b></td>
+        <td>25PKG</td>
+    </tr>
+    
+    <tr>
+    	<td><b>Type of Delivery: </b></td>
+        <td>Bonded</td>
+    </tr>
+    <tr>
+    	<td colspan="2" align="center" style="text-decoration:underline">
+        	<br/><b>Price Breakdown</b>
+        </td>
+    </tr>
+    <tr>
+    	<td><b>Transport Charges:</b></td>
+        <td>$6.00</td>
+    </tr>
+    <tr>
+   		<td><b>SG Export Permit:</b></td>
+        <td>$17.00</td>
+    </tr>
+    <tr>
+   		<td><b>K1 Forms:</b></td>
+        <td>$16.00</td>
+    </tr>
+    <tr bgcolor="#f4c2c2">
+   		<td><b>Sub Total:</b></td>
+        <td>$39.00</td>
+    </tr>
+    <tr>
+   		<td><b>Remarks:</b></td>
+        <td>Same day delivery.</td>
+    </tr>
+
+    
+   <tr align="center">
+    <td colspan="2">
+          <a href="#page2-1-POD" class="ui-btn" data-transition="slide" data-direction="reverse">Return</a>
+    </td>
+  </tr>
+
+</table>
+  </div>
+
+<!--
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>-->
+</div>
+
 
 
 
@@ -1075,20 +1306,20 @@ function playSound(soundfile) {
   
     <!--list of job orders added [with search function included with the form tags]-->
     <form class="ui-filterable">
-      <input id="myFilter0" data-type="search" placeholder="Enter sector code eg. 73 ">
+      <input id="myFilter0" data-type="search" placeholder="Enter region eg. north ">
     </form>
     
     <ul data-role="listview" data-filter="true" data-input="#myFilter0">
     
       <!--WEST REGION-->
       <li data-role="list-divider">West</li>
-      <li data-filtertext="66">
+      <li data-filtertext="west">
       <!--1st job-->
       <!--PAGE 2-1 / Details-->
       <a href="#" data-transition="slide">Hillview > Changi Warehouse</a>
       </li>
       
-      <li data-filtertext="68">
+      <li data-filtertext="west">
       <!--2nd job-->
       <!--PAGE 2-2 / Details-->
       <a href="#" data-transition="slide">Chua Chu Kang > Jurong Warehouse</a>
@@ -1096,13 +1327,13 @@ function playSound(soundfile) {
       
       <!--NORTH REGION-->
       <li data-role="list-divider">North</li>
-      <li data-filtertext="56">
+      <li data-filtertext="north">
       <!--3rd job-->
       <!--PAGE 2-3 / Details-->
       <a href="#" data-transition="slide">Ang Mo Kio > Penang Warehouse</a>
       </li>
     
-      <li data-filtertext="73">
+      <li data-filtertext="north">
       <!--4th job-->
       <!--PAGE 2-4 / Details-->
       <a href="#" data-transition="slide">Woodgrove > Simei Warehouse</a>
@@ -1110,13 +1341,13 @@ function playSound(soundfile) {
     
       <!--EAST REGION-->
       <li data-role="list-divider">East</li>
-      <li data-filtertext="51">
+      <li data-filtertext="east">
       <!--5th job-->
       <!--PAGE 2-5 / Details-->
       <a href="#" data-transition="slide">Tampines > Dover Warehouse</a>
       </li>
       
-      <li data-filtertext="46">
+      <li data-filtertext="east">
       <!--6th job-->
       <!--PAGE 2-6 / Details-->
       <a href="#" data-transition="slide">Bedok > Paya Lebar Warehouse</a>
@@ -1124,13 +1355,13 @@ function playSound(soundfile) {
       
       <!--SOUTH REGION-->
       <li data-role="list-divider">South</li>
-      <li data-filtertext="06">
+      <li data-filtertext="south">
       <!--7th job-->
       <!--PAGE 2-7 / Details-->
       <a href="#" data-transition="slide">Marina Bay > Dover Warehouse</a>
       </li>
       
-      <li data-filtertext="10">
+      <li data-filtertext="south">
       <!--8th job-->
       <!--PAGE 2-8 / Details-->
       <a href="#" data-transition="slide">Harbour Front > Marina Bay Warehouse</a>
@@ -1189,20 +1420,20 @@ function playSound(soundfile) {
   
     <!--list of job orders added [with search function included with the form tags]-->
     <form class="ui-filterable">
-      <input id="myFilter1" data-type="search" placeholder="Enter sector code eg. 76 ">
+      <input id="myFilter1" data-type="search" placeholder="Enter region eg. south ">
     </form>
     
     <ul data-role="listview" data-filter="true" data-input="#myFilter1">
     
       <!--WEST REGION-->
       <li data-role="list-divider">West</li>
-      <li data-filtertext="70">
+      <li data-filtertext="west">
       <!--1st job-->
       <!--PAGE 2-1 / Details-->
       <a href="#" data-transition="slide">Lim Chu Kang > Changi Warehouse</a>
       </li>
       
-      <li data-filtertext="26">
+      <li data-filtertext="west">
       <!--2nd job-->
       <!--PAGE 2-2 / Details-->
       <a href="#" data-transition="slide">Bukit Timah > Jurong Warehouse</a>
@@ -1210,13 +1441,13 @@ function playSound(soundfile) {
       
       <!--NORTH REGION-->
       <li data-role="list-divider">North</li>
-      <li data-filtertext="75">
+      <li data-filtertext="north">
       <!--3rd job-->
       <!--PAGE 2-3 / Details-->
       <a href="#" data-transition="slide">Yishun > Penang Warehouse</a>
       </li>
     
-      <li data-filtertext="76">
+      <li data-filtertext="north">
       <!--4th job-->
       <!--PAGE 2-4 / Details-->
       <a href="#" data-transition="slide">Sembawang > Simei Warehouse</a>
@@ -1224,13 +1455,13 @@ function playSound(soundfile) {
     
       <!--EAST REGION-->
       <li data-role="list-divider">East</li>
-      <li data-filtertext="49">
+      <li data-filtertext="east">
       <!--5th job-->
       <!--PAGE 2-5 / Details-->
       <a href="#" data-transition="slide">Loyang > Dover Warehouse</a>
       </li>
       
-      <li data-filtertext="81">
+      <li data-filtertext="east">
       <!--6th job-->
       <!--PAGE 2-6 / Details-->
       <a href="#" data-transition="slide">Changi > Paya Lebar Warehouse</a>
@@ -1238,13 +1469,13 @@ function playSound(soundfile) {
       
       <!--SOUTH REGION-->
       <li data-role="list-divider">South</li>
-      <li data-filtertext="06">
+      <li data-filtertext="south">
       <!--7th job-->
       <!--PAGE 2-7 / Details-->
       <a href="#" data-transition="slide">Marina Bay > Dover Warehouse</a>
       </li>
       
-      <li data-filtertext="10">
+      <li data-filtertext="south">
       <!--8th job-->
       <!--PAGE 2-8 / Details-->
       <a href="#" data-transition="slide">Harbour Front > Marina Bay Warehouse</a>
